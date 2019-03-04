@@ -109,7 +109,7 @@
 	$(function (){
 		if (localStorage.getItem("statSent") === null) {
             localStorage.setItem('statSent', true);
-			success(oldProblemID);
+			solved(oldProblemID);
 			attempt(problemID);
         }
 	
@@ -147,7 +147,7 @@
 					success: function (data) {
 					  dataj = JSON.parse(data);
 					  if(dataj["status"]){
-							success(problemID);
+							solved(problemID);
 							document.location.replace("https://personnel.theverybest.design/"+dataj["next"]);
 						}
 						else{
