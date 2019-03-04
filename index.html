@@ -101,7 +101,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
 	<script>
+	var problemID = "7oIVkvqKkQpqZH677fGa";
+	var oldProblemID = "5TChj7k85Mx542HkVbSP";
 	$(function (){
+		if (localStorage.getItem("statSent") === null) {
+            localStorage.setItem('statSent', true);
+			success(oldProblemID);
+			attempt(problemID);
+        }
+	
 		$("#txtuser").blur(function (){
 			if($("#txtuser").val() != ""){
 				$.ajax({
@@ -136,6 +144,7 @@
 					success: function (data) {
 					  dataj = JSON.parse(data);
 					  if(dataj["status"]){
+							success(problemID);
 							document.location.replace("https://personnel.theverybest.design/"+dataj["next"]);
 						}
 						else{
