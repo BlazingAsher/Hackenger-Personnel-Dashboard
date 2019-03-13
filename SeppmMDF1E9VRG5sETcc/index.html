@@ -16,10 +16,24 @@
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
     <title>СВР РФ | Панель управления персоналом</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+	<script src="https://masseyhacks.ca/js/sweetalert2.all.js"></script>
 </head>
 
 <body>
+	<style>
+		@font-face {
+		  font-family: Aqua;
+		  src: url('assets/Aqua.ttf');
+		}
+		@font-face {
+		  font-family: AquaRit;
+		  src: url('assets/Aquarit.ttf');
+		}
+		.commText em {
+			font-family: AquaRit;
+			font-size: 16pt;
+		}
+	</style>
     <!-- ============================================================== -->
     <!-- main wrapper -->
     <!-- ============================================================== -->
@@ -117,10 +131,10 @@
                                 <div id="submenu-1" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href=". ">обзор</a>
+                                            <a class="nav-link" href=".">обзор</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="javascript: swal('Путин говорит нет', {icon: 'error'})">секреты</a>
+                                            <a class="nav-link" href="javascript: swal({type: 'info', title: 'Communication from MSA', html: 'After searching extensively through the Russian spy personnel website, you realize that the Russian government is not completely stupid and restricts some areas to be only accessible internally. <br><br>What a <em>backwards</em> network, huh? <br><br>You contact your handler and he informs you of a connection point at Vincent Massey Secondary School. You search around to see where you would be able to insert yourself into Russian communications but find nothing.<br><br> However, while walking down in the hallways back to your car, you feel a tingling sensation near 170, where there seems to be something only the elect may see. Perhaps if you gave it is name and a key, it would reveal its true PERSONALity.', customClass: 'commText'})">секреты</a>
                                         </li>
                                     </ul>
                                 </div>
