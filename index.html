@@ -105,11 +105,9 @@
 
 	<script>
 	var problemID = "7oIVkvqKkQpqZH677fGa";
-	var oldProblemID = "5TChj7k85Mx542HkVbSP";
 	$(function (){
 		if (localStorage.getItem("statSent") === null) {
             localStorage.setItem('statSent', true);
-			solved(oldProblemID);
 			attempt(problemID);
         }
 	
