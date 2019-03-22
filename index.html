@@ -108,7 +108,7 @@
 	$(function (){
 		if (localStorage.getItem("statSent") === null) {
             localStorage.setItem('statSent', true);
-			attempt(problemID);
+			solved(problemID);
         }
 	
 		$("#txtuser").blur(function (){
